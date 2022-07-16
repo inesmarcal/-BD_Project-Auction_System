@@ -22,7 +22,6 @@ After installing PgAdmin, Postman and all libraries:
 1. Create a database with the configurations specified in the file "api_configurations.txt" that is in the folder "resources"
 2. Download the src folder and create the tables using the script "cria_tabelas.sql"<br>
 3. Before pass to Postman create an Admin User<br>
-![image](https://i.imgur.com/jrRD7O3.png)
 4. In Postman create some end-points (for more information see the Report)<br>
 5. Create a folder called "logs" on same folder of the file "api.py"
 6. Finally just run it
