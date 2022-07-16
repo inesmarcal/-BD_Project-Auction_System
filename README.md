@@ -19,7 +19,7 @@ Consists in develop a program that implements an Auction System using the framew
 
 ## To run this project:
 After installing PgAdmin, Postman and all libraries:
-1. Create a database with the configurations specified in the file "api_configurations.txt" that is in the folder "resources"
+1. Create a database with the configurations specified in the file "api_configurations.txt" that is inside the folder "resources"
 2. Download the src folder and create the tables using the script "cria_tabelas.sql"<br>
 3. Before pass to Postman create an Admin User<br>
 4. In Postman create some end-points (for more information see the Report)<br>
@@ -30,8 +30,7 @@ After installing PgAdmin, Postman and all libraries:
 ```
 
 ## Notes important to read:
-   - To know how to use all the end-points see the Report, they are all described there
-   - Some end-points need a token of authentication<br>
+   - Inside of the folder "docs" there is a file called "Relatorio.pdf" that works as user and installation manual
 
 ## Authors:
 - [Inês Marçal](https://github.com/inesmarcal)
