@@ -1,0 +1,556 @@
+{
+	"info": {
+		"_postman_id": "d4f9ac4b-5837-40fa-ae9f-76ed60d97a49",
+		"name": "Projeto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adicionarUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "pipoca+d",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "OLA@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "2hdbanx ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "autenticacao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "beatriz1234",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Patii01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criarLeilao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "Sdwll34",
+							"type": "text"
+						},
+						{
+							"key": "codigo_artigo",
+							"value": "45367",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "Estátua Histórica",
+							"type": "text"
+						},
+						{
+							"key": "data_hora_fim",
+							"value": "2021-06-5T22:30:00.000",
+							"type": "text"
+						},
+						{
+							"key": "detalhes_adicionais",
+							"value": "Em mármore",
+							"type": "text"
+						},
+						{
+							"key": "preco_minimo",
+							"value": "4000",
+							"type": "text"
+						},
+						{
+							"key": "descricao_atual",
+							"value": "Pieta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leilao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leilao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detalhesTodosLeiloes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leiloes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leiloes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detalhesLeilaoKeyword",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "Sdwll34",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leiloes/Jarra em ceramica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leiloes",
+						"Jarra em ceramica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detalhesLeilao",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "iausbcx",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leilao/65373",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leilao",
+						"65373"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leiloesUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leiloes_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leiloes_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "licitar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "dqdJdufld",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/licitar/45627290/200000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"licitar",
+						"45627290",
+						"200000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarLeilao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "Sdwll34",
+							"type": "text"
+						},
+						{
+							"key": "parametro",
+							"value": "titulo",
+							"type": "text"
+						},
+						{
+							"key": "nova_desc",
+							"value": "Isto é um teste",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leilao/45367",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leilao",
+						"45367"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mensagensLeilao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "dqdJdufld",
+							"type": "text"
+						},
+						{
+							"key": "mensagem",
+							"value": "Como são as jantes?",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/mensagem_leilao/36257",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"mensagem_leilao",
+						"36257"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "receberMens",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "Sdwll34",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/recebermens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"recebermens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelarLeilao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "gxduwhbphqhvhv",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/cancelarleilao/45627290",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"cancelarleilao",
+						"45627290"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "acabarleilao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/endleilao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"endleilao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "banirUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "Sdwll34",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/banuser/anaGarcia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"banuser",
+						"anaGarcia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "estatisticas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "Sdwll34",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/estatisticasapp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"estatisticasapp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/historico/<leilaoID>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"historico",
+						"<leilaoID>"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
